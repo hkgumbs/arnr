@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "ARNR: Always Read, Never Red",
+    "description": "I don't want to see the number of hangouts conversations within Inbox",
+    "version": "1.0",
+
+    "icons": {
+        "16": "icons/16.png",
+        "128": "icons/128.png"
+    },
+
+    "content_scripts": [
+        {
+           "css": [
+               "arnr.css"
+           ],
+           "matches": [
+               "https://inbox.google.com/*"
+           ]
+        }
+    ]
+}
